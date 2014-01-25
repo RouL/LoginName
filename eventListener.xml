@@ -5,7 +5,7 @@
 		<eventlistener>
 			<eventclassname>wcf\system\user\authentication\UserAuthenticationFactory</eventclassname>
 			<eventname>init</eventname>
-			<listenerclassname>wcf\system\event\listener\UserAuthenticationFactoryLoginNameListener</listenerclassname>
+			<listenerclassname>wcf\system\event\listener\UserAuthenticationFactoryLoginnameListener</listenerclassname>
 			<environment>user</environment>
 			<inherit>1</inherit>
 		</eventlistener>
@@ -15,9 +15,79 @@
 		<eventlistener>
 			<eventclassname>wcf\system\user\authentication\UserAuthenticationFactory</eventclassname>
 			<eventname>init</eventname>
-			<listenerclassname>wcf\system\event\listener\UserAuthenticationFactoryLoginNameListener</listenerclassname>
+			<listenerclassname>wcf\system\event\listener\UserAuthenticationFactoryLoginnameListener</listenerclassname>
 			<environment>admin</environment>
 			<inherit>1</inherit>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<listenerclassname>wcf\system\event\listener\UserAddFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+			<eventname>readFormParameters</eventname>
+			<listenerclassname>wcf\system\event\listener\UserAddFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+			<eventname>validate</eventname>
+			<listenerclassname>wcf\system\event\listener\UserAddFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+			<eventname>save</eventname>
+			<listenerclassname>wcf\system\event\listener\UserAddFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+			<eventname>saved</eventname>
+			<listenerclassname>wcf\system\event\listener\UserAddFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserEditForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<listenerclassname>wcf\system\event\listener\UserEditFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserEditForm</eventclassname>
+			<eventname>readFormParameters</eventname>
+			<listenerclassname>wcf\system\event\listener\UserEditFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserEditForm</eventclassname>
+			<eventname>validate</eventname>
+			<listenerclassname>wcf\system\event\listener\UserEditFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserEditForm</eventclassname>
+			<eventname>save</eventname>
+			<listenerclassname>wcf\system\event\listener\UserEditFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
+		</eventlistener>
+
+		<eventlistener>
+			<eventclassname>wcf\acp\form\UserEditForm</eventclassname>
+			<eventname>readData</eventname>
+			<listenerclassname>wcf\system\event\listener\UserEditFormLoginnameListener</listenerclassname>
+			<environment>admin</environment>
 		</eventlistener>
 		<!-- /admin -->
 	</import>

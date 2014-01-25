@@ -18,9 +18,9 @@ use wcf\util\StringUtil;
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		info.codingcorner.wcf.user.botcheck
  * @subpackage	system.event.listener
- * @category	Community Framework
+ * @category	LoginName
  */
-class UserAuthenticationFactoryLoginNameListener implements IEventListener {
+class UserAuthenticationFactoryLoginnameListener implements IEventListener {
 	/**
 	 * instance of UserAuthenticationFactory
 	 * @var wcf\system\user\authentication\UserAuthenticationFactory

@@ -1,3 +1,3 @@
 -- add login to users
-ALTER TABLE wcf1_user ADD login VARCHAR(250);
-ALTER TABLE wcf1_user ADD UNIQUE login (login);
+ALTER TABLE wcf1_user ADD loginname VARCHAR(250);
+ALTER TABLE wcf1_user ADD UNIQUE KEY loginname (loginname);

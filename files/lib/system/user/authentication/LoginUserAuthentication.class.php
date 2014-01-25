@@ -19,7 +19,7 @@ class LoginUserAuthentication extends DefaultUserAuthentication {
 	protected function getUserByLogin($login) {
 		$sql = "SELECT	*
 				FROM	wcf".WCF_N."_user
-				WHERE	login = ?";
+				WHERE	loginname = ?";
 		$statement = WCF::getDB()->prepareStatement($sql);
 		$statement->execute(array($login));
 		$row = $statement->fetchArray();
